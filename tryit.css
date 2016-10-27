@@ -3,6 +3,7 @@ body {
 }
 img {
 	width: 100%;
+	display:none;
 }
 td {
 	margin-top: 15%;
@@ -28,4 +29,8 @@ td {
 }
 #flowers {
 	width: 100px;
+}
+canvas {
+	width:500;
+	height:500;
 }
