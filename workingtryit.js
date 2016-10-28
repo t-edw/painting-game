@@ -1,7 +1,10 @@
+var pressed = false;
+var canvas;
+var context;
 window.addEventListener('load', function(ev) {
     var sourceimage = document.querySelector('img');
-    var canvas = document.querySelector('canvas');
-    var context = canvas.getContext('2d');
+    canvas = document.querySelector('canvas');
+    context = canvas.getContext('2d');
     var mouseX = 0, mouseY = 0,
         width = 500, height = 500,
         mousedown = false;
@@ -11,7 +14,7 @@ window.addEventListener('load', function(ev) {
 	var pat = context.createPattern(img,"no-repeat");
     context.fillStyle = pat; 
     function draw(ev) {
-      if (mousedown) {
+      if (mousedown&&pressed) {
         var x = ev.layerX;
         var y = ev.layerY;
         x = (Math.ceil(x / 10) * 10) - 10;
@@ -33,5 +36,21 @@ window.addEventListener('load', function(ev) {
       mouseover = false;
     }, false );
   } ,false);
- 
- 
+ function press(){
+	  pressed = true;
+  }
+ function resetCan(){
+	pressed = false;
+	context.clearRect(0,0,500,500);
+ }
+ function stop() {
+	 pressed=false;
+ }
+ function playSound() {
+	 var audio = document.getElementById('backgroundMusic');
+	 audio.play();
+ }
+ function stopSound() {
+	 var audio = document.getElementById('backgroundMusic');
+	 audio.pause();
+ }

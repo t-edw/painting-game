@@ -1,9 +1,13 @@
 body {
 	background-color: #a6e0c6;
 }
-img {
+.invisible {
 	width: 100%;
 	display:none;
+}
+img {
+	width: 100px;
+	height: 100px;
 }
 td {
 	margin-top: 15%;
@@ -31,6 +35,6 @@ td {
 	width: 100px;
 }
 canvas {
-	width:500;
-	height:500;
+	width:500px;
+	height:500px;
 }
