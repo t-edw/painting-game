@@ -46,11 +46,23 @@ window.addEventListener('load', function(ev) {
  function stop() {
 	 pressed=false;
  }
- function playSound() {
-	 var audio = document.getElementById('backgroundMusic');
-	 audio.play();
- }
- function stopSound() {
-	 var audio = document.getElementById('backgroundMusic');
-	 audio.pause();
- }
+function rain(){
+	document.getElementById('backgroundMusic').pause();
+	document.getElementById('source').src="rain.mp3";
+	document.getElementById('backgroundMusic').play();
+}
+function ocean() {
+	document.getElementById('backgroundMusic').pause();
+	document.getElementById('source').src="ocean.mp3";
+	document.getElementById('backgroundMusic').play();
+}
+function classical() {
+	document.getElementById('backgroundMusic').pause();
+	document.getElementById('source').src="classical.mp3";
+	document.getElementById('backgroundMusic').play();
+}
+function forest() {
+	document.getElementById('backgroundMusic').pause();
+	document.getElementById('source').src="forest.mp3";
+	document.getElementById('backgroundMusic').play();
+}

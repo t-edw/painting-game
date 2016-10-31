@@ -8,11 +8,14 @@
 </head>
 <body>
 	<h6>Sound:</h6>
-	<audio id="backgroundMusic" loop>
-		<source src="rain.mp3" type="audio/mpeg">
+	<audio id="backgroundMusic" autoplay loop>
+		<source id="source" src="rain.mp3" type="audio/mpeg"></source>
 		Your browser does not suppose the audio element.
 	</audio>
-	<button id="playMusic" onclick="playSound()"><img src="play.png"></button><button id="stopMusic" onclick="stopSound()"><img src="pause.png"></button>
+	<button id="rain" onclick="rain()">rain</button>
+	<button id="ocean" onclick="ocean()">ocean</button>
+	<button id="forest" onclick="forest()">forest</button>
+	<button id="classical" onclick="classical()">classical</button>
 	<br><br>
 	<button id="begin" onclick="press()">start game</button><button id="reset" onclick="resetCan()">reset</button><button id="stop" onclick="stop()">end</button>
 	<br>
