@@ -1,13 +1,18 @@
 var pressed = false;
 var canvas;
 var context;
-document.getElementById("begin").addEventListener('click', function(ev) {
-    var sourceimage = document.querySelector('img');
+window.addEventListener('mouseover', function(ev) {
+   
+  } ,false);
+ function press(){
+	pressed = true;
+	var sourceimage = document.querySelector('img');
     canvas = document.querySelector('canvas');
     context = canvas.getContext('2d');
+	context.clearRect(0,0,500,500);
     var mouseX = 0, mouseY = 0,
-        width = 500, height = 500,
-        mousedown = false;
+	width = 500, height = 500,
+    mousedown = false;
     canvas.width = width;
     canvas.height = height;
 	randomImage();
@@ -36,9 +41,6 @@ document.getElementById("begin").addEventListener('click', function(ev) {
     canvas.addEventListener('mouseout', function(ev) {
       mouseover = false;
     }, false );
-  } ,false);
- function press(){
-	  pressed = true;
   }
  function resetCan(){
 	pressed = false;
