@@ -10,7 +10,7 @@ window.addEventListener('load', function(ev) {
         mousedown = false;
     canvas.width = width;
     canvas.height = height;
-	var img = document.getElementById("flowers");
+	var img = document.getElementById("invisible");
 	var pat = context.createPattern(img,"no-repeat");
     context.fillStyle = pat; 
     function draw(ev) {
@@ -42,6 +42,7 @@ window.addEventListener('load', function(ev) {
  function resetCan(){
 	pressed = false;
 	context.clearRect(0,0,500,500);
+	randomImage();
  }
  function stop() {
 	 pressed=false;
@@ -49,20 +50,29 @@ window.addEventListener('load', function(ev) {
 function rain(){
 	document.getElementById('backgroundMusic').pause();
 	document.getElementById('source').src="rain.mp3";
+	document.getElementById('backgroundMusic').load();
 	document.getElementById('backgroundMusic').play();
 }
 function ocean() {
 	document.getElementById('backgroundMusic').pause();
 	document.getElementById('source').src="ocean.mp3";
+	document.getElementById('backgroundMusic').load();
 	document.getElementById('backgroundMusic').play();
 }
 function classical() {
 	document.getElementById('backgroundMusic').pause();
 	document.getElementById('source').src="classical.mp3";
+	document.getElementById('backgroundMusic').load();
 	document.getElementById('backgroundMusic').play();
 }
 function forest() {
 	document.getElementById('backgroundMusic').pause();
 	document.getElementById('source').src="forest.mp3";
+	document.getElementById('backgroundMusic').load();
 	document.getElementById('backgroundMusic').play();
+}
+function randomImage() {
+	var imgList = ["beach.jpg","space.jpg","stars.jpg","pinterest.jpg","purple.jpg","succulents.jpg","puppies2.jpg","puppies.jpg","monkeys.jpg","monkey.jpg"];
+	var index = Math.floor(Math.random() * imgList.length);
+	document.getElementById('invisible').src=imgList[index];
 }

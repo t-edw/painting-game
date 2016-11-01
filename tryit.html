@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h6>Sound:</h6>
-	<audio id="backgroundMusic" autoplay loop>
-		<source id="source" src="rain.mp3" type="audio/mpeg"></source>
+	<audio id="backgroundMusic" loop>
+		<source id="source" type="audio/mpeg"></source>
 		Your browser does not suppose the audio element.
 	</audio>
 	<button id="rain" onclick="rain()">rain</button>
@@ -18,8 +18,8 @@
 	<button id="classical" onclick="classical()">classical</button>
 	<br><br>
 	<button id="begin" onclick="press()">start game</button><button id="reset" onclick="resetCan()">reset</button><button id="stop" onclick="stop()">end</button>
-	<br>
-	<img class="invisible" id="flowers" src="flowers.png">
+	<br><br>
+	<img class="invisible" id="invisible" src="stars.jpg" onload="randomImage()">
 	<canvas id="images" align="center">
 		Canvas is not supported
 	</canvas>

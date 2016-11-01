@@ -27,9 +27,11 @@ td {
 	left:0;
 }
 #images {
-	width:80%;
-	height:80%;
 	border:1px solid #000000;
+	width:500px;
+	height:500px;
+	display:block;
+	margin:auto;
 }
 #flowers {
 	width: 100px;
