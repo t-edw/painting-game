@@ -1,7 +1,7 @@
 var pressed = false;
 var canvas;
 var context;
-window.addEventListener('load', function(ev) {
+document.getElementById("begin").addEventListener('click', function(ev) {
     var sourceimage = document.querySelector('img');
     canvas = document.querySelector('canvas');
     context = canvas.getContext('2d');
@@ -10,6 +10,7 @@ window.addEventListener('load', function(ev) {
         mousedown = false;
     canvas.width = width;
     canvas.height = height;
+	randomImage();
 	var img = document.getElementById("invisible");
 	var pat = context.createPattern(img,"no-repeat");
     context.fillStyle = pat; 
@@ -17,8 +18,8 @@ window.addEventListener('load', function(ev) {
       if (mousedown&&pressed) {
         var x = ev.layerX;
         var y = ev.layerY;
-        x = (Math.ceil(x / 10) * 10) - 10;
-        y = (Math.ceil(y / 5) * 5) - 5;
+        x = (Math.ceil(x / 10) * 10);
+        y = (Math.ceil(y / 5) * 5)+5;
 		context.beginPath();
         context.arc(x,y,30,0,2*Math.PI,false);
 		context.fill();
@@ -42,7 +43,6 @@ window.addEventListener('load', function(ev) {
  function resetCan(){
 	pressed = false;
 	context.clearRect(0,0,500,500);
-	randomImage();
  }
  function stop() {
 	 pressed=false;
