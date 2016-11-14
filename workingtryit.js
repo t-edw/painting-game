@@ -1,10 +1,13 @@
 var pressed = false;
 var canvas;
 var context;
-window.addEventListener('mouseover', function(ev) {
-   
-  } ,false);
- function press(){
+var source;
+function press(){
+	var rand = Math.floor(Math.random()*10);
+//	source=changeImage(rand);
+/* 	 */
+//	document.getElementById('invisible').src=source;
+//	document.getElementById('invisible').src=source;
 	pressed = true;
 	var sourceimage = document.querySelector('img');
     canvas = document.querySelector('canvas');
@@ -15,8 +18,8 @@ window.addEventListener('mouseover', function(ev) {
     mousedown = false;
     canvas.width = width;
     canvas.height = height;
-	randomImage();
-	var img = document.getElementById("invisible");
+	rand = ""+rand+"";
+	var img = document.getElementById(rand);
 	var pat = context.createPattern(img,"no-repeat");
     context.fillStyle = pat; 
     function draw(ev) {
@@ -39,16 +42,9 @@ window.addEventListener('mouseover', function(ev) {
       mousedown = true;
     }, false );
     canvas.addEventListener('mouseout', function(ev) {
-      mouseover = false;
+      mousedown = false;
     }, false );
   }
- function resetCan(){
-	pressed = false;
-	context.clearRect(0,0,500,500);
- }
- function stop() {
-	 pressed=false;
- }
 function rain(){
 	document.getElementById('backgroundMusic').pause();
 	document.getElementById('source').src="rain.mp3";
@@ -73,8 +69,29 @@ function forest() {
 	document.getElementById('backgroundMusic').load();
 	document.getElementById('backgroundMusic').play();
 }
-function randomImage() {
-	var imgList = ["beach.jpg","space.jpg","stars.jpg","pinterest.jpg","purple.jpg","succulents.jpg","puppies2.jpg","puppies.jpg","monkeys.jpg","monkey.jpg"];
-	var index = Math.floor(Math.random() * imgList.length);
-	document.getElementById('invisible').src=imgList[index];
+function changeImage(rand) {
+	if(rand==0)
+		return "space.jpg";
+	if(rand==1)
+		return "stars.jpg";
+	if(rand==2)
+		return "succulents.jpg";
+	if(rand==3)
+		return "purple.jpg";
+	if(rand==4)
+		return "pinterest.jpg";
+	if(rand==5)
+		return "monkey.jpg";
+	if(rand==6)
+		return "monkeys.jpg";
+	if(rand==7)
+		return "puppies.jpg";
+	if(rand==8)
+		return "puppies2.jpg";
+	if(rand==9)
+		return "beach.jpg";
 }
+// auto change image when compelte?
+// more precise instructions
+// making sure you can reach all edges
+// chasing something?
