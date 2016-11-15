@@ -41,6 +41,9 @@ function press(){
     canvas.addEventListener('mouseenter', function(ev) {
       mousedown = true;
     }, false );
+	canvas.addEventListener('mousedown', function(ev) {
+      mousedown = true;
+    }, false );
     canvas.addEventListener('mouseout', function(ev) {
       mousedown = false;
     }, false );
