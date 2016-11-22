@@ -5,19 +5,26 @@
 	<script type="text/javascript" src="calming.js"></script>
 	<meta charset="UTF-8">
 	<title>painting game</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<h6>Sound:</h6>
 	<audio id="backgroundMusic" loop>
 		<source id="source" type="audio/mpeg"></source>
 		Your browser does not suppose the audio element.
 	</audio>
-	<button id="rain" onclick="rain()">rain</button>
-	<button id="ocean" onclick="ocean()">ocean</button>
-	<button id="forest" onclick="forest()">forest</button>
-	<button id="classical" onclick="classical()">classical</button>
-	<br><br>
-	<button id="begin" onclick="press()">start game</button>
+	<nav>
+	  <p id="begin" onclick="press()"><i class="fa fa-connectdevelop"></i> Start Game</p>
+	  
+	  <div class="dropdown">
+		<p class="dropbtn">	<i class="fa fa-music"></i> Sounds</p>
+		<div class="dropdown-content">
+		  <button id="rain" onclick="rain()">rain</button>
+		  <button id="ocean" onclick="ocean()">ocean</button>
+		  <button id="forest" onclick="forest()">forest</button>
+		  <button id="classical" onclick="classical()">classical</button>
+		</div>
+	  </div>
+	</nav>
 	<br><br>
 	<img class="invisible" id="0" src="succulents.jpg">
 	<img class="invisible" id="1" src="space.jpg">
