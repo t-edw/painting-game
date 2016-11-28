@@ -25,10 +25,13 @@ function press(){
     context.fillStyle = pat; 
     function draw(ev) {
       if (mousedown&&pressed) {
-        var x = ev.layerX;
+        /* var x = ev.layerX;
         var y = ev.layerY;
         x = (Math.ceil(x / 10) * 10);
-        y = (Math.ceil(y / 5) * 5)+5;
+        y = (Math.ceil(y / 5) * 5)+5; */
+		var rect = canvas.getBoundingClientRect();
+		var x = ev.clientX - rect.left;
+		var y = ev.clientY - rect.top;
 		context.beginPath();
         context.arc(x,y,30,0,2*Math.PI,false);
 		context.fill();
@@ -94,6 +97,9 @@ function changeImage(rand) {
 		return "puppies2.jpg";
 	if(rand==9)
 		return "beach.jpg";
+}
+function stopMusic(){
+	document.getElementById('backgroundMusic').pause();
 }
 // auto change image when compelte?
 // more precise instructions
