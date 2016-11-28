@@ -3,6 +3,7 @@ var pressed = false;
 var canvas;
 var context;
 var source;
+var size = 25;
 function press(){
 	var rand = Math.floor(Math.random()*10);
 	pressed = true;
@@ -25,7 +26,7 @@ function press(){
 		var x = ev.clientX - rect.left;
 		var y = ev.clientY - rect.top;
 		context.beginPath();
-        context.arc(x,y,30,0,2*Math.PI,false);
+        context.arc(x,y,size,0,2*Math.PI,false);
 		context.fill();
 		context.closePath();
       }
@@ -93,6 +94,18 @@ function changeImage(rand) {
 }
 function stopMusic(){
 	document.getElementById('backgroundMusic').pause();
+}
+function small(){
+	size=15;
+}
+function medium(){
+	size=25;
+}
+function large(){
+	size=45;
+}
+function size(){
+	size=document.getElementById("range").value;
 }
 // auto change image when compelte?
 // more precise instructions
