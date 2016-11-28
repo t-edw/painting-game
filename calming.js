@@ -5,10 +5,6 @@ var context;
 var source;
 function press(){
 	var rand = Math.floor(Math.random()*10);
-//	source=changeImage(rand);
-/* 	 */
-//	document.getElementById('invisible').src=source;
-//	document.getElementById('invisible').src=source;
 	pressed = true;
 	var sourceimage = document.querySelector('img');
     canvas = document.querySelector('canvas');
@@ -25,10 +21,6 @@ function press(){
     context.fillStyle = pat; 
     function draw(ev) {
       if (mousedown&&pressed) {
-        /* var x = ev.layerX;
-        var y = ev.layerY;
-        x = (Math.ceil(x / 10) * 10);
-        y = (Math.ceil(y / 5) * 5)+5; */
 		var rect = canvas.getBoundingClientRect();
 		var x = ev.clientX - rect.left;
 		var y = ev.clientY - rect.top;
@@ -38,6 +30,7 @@ function press(){
 		context.closePath();
       }
     }
+	
     canvas.addEventListener('mouseover', function(ev) {
       document.body.classList.add('painted');
     }, false);
