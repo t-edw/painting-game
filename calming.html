@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="tryit.css">
+	<link rel="stylesheet" type="text/css" href="calming.css">
 	<script type="text/javascript" src="calming.js"></script>
 	<meta charset="UTF-8">
 	<title>painting game</title>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -12,20 +13,28 @@
 		<source id="source" type="audio/mpeg"></source>
 		Your browser does not suppose the audio element.
 	</audio>
-	<nav>
+<!-- 	<nav>
 	  <p id="begin" onclick="press()"><i class="fa fa-connectdevelop"></i> Start Game</p>
-	  
-	  <div class="dropdown">
-		<p class="dropbtn">	<i class="fa fa-music"></i> Sounds</p>
-		<div class="dropdown-content">
+ 	  <div class="dropdown">
+		<p class="dropbtn">	<!-- <i class="fa fa-music"></i> Sounds</p>
+		<div class="dropdown-content"> 
 		  <button id="rain" onclick="rain()">rain</button>
 		  <button id="ocean" onclick="ocean()">ocean</button>
 		  <button id="forest" onclick="forest()">forest</button>
 		  <button id="classical" onclick="classical()">classical</button>
 		</div>
-	  </div>
+	  </div> 
+	</nav> -->
+	<nav>
+		<button id="begin" onclick="press()">start</button>
+		<button id="rain" onclick="rain()">rain</button>
+		<button id="ocean" onclick="ocean()">ocean</button>
+		<button id="forest" onclick="forest()">forest</button>
+		<button id="classical" onclick="classical()">classical</button>
+		<button id="stop" onclick="stopMusic()">silence</button>
 	</nav>
-	<br><br>
+	<br><br><br>
+	<p>welcome to [name], an interactive painting game designed to calm. to begin, press the start button above, then simply mouse over the square below to see the picture appear. there are also several sound options available. try them out by clicking the button with the sound you'd like to hear. if you would prefer not to hear anything at all, click silence and the sounds will stop.</p>
 	<img class="invisible" id="0" src="succulents.jpg">
 	<img class="invisible" id="1" src="space.jpg">
 	<img class="invisible" id="2" src="stars.jpg">
