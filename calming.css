@@ -1,5 +1,5 @@
 body { 
-	background-color: #47afb8;
+	background-color: #ccccff/*#bcc6d6/*#47afb8*/;
 }
 .invisible {
 	width: 1%;
@@ -16,61 +16,6 @@ canvas {
 	width:500px;
 	height:500px;
 }
-/* nav a, .dropbtn {
-    display: inline-block;
-	float:center;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-	text-shadow: 1px 1px black;
-    text-decoration: none;
-}
-nav p {
-    display: inline-block;
-	float:center;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-	text-shadow: 1px 1px black;
-    text-decoration: none;
-}
-nav p:hover{
-	background-color:white;
-	color: #c0c0c0;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #7092BE;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a:hover {
-	background-color: white;
-	color: #c0c0c0;
- }
-.dropdown {
-	width: 10%;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown:hover .dropbtn {
-    background-color: white;
-	color: #c0c0c0;
-}
-button {
-    background-color: #7092BE; //Green
-    border: none;
-    color: white;
-    padding: 15px 32px;
-	size: 100%
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-} */
 nav {
     z-index: 9999;
     display: block;
@@ -94,19 +39,20 @@ nav button, button:active{
     color: #ffffff;
 	background-color: transparent;
     text-decoration: none;
-	outline:none;
+	outline: none;
 	font-family: 'Libre Franklin', sans-serif;
+	transition: 0.75s;
 }
 nav button:hover {
     cursor: default;
     background-color: #ffffff;
     color: #c1c1c1;
-    transition: 0.5s;
+    transition: 0.75s;
 	font-family: 'Libre Franklin', sans-serif;
 }
 canvas {
 	display: block;
-	margin: auto;]
+	margin: auto;
 }
 body{
 	position: relative;
