@@ -7,9 +7,7 @@ body {
 	margin-left:auto;
 	margin-right: auto;
 	column-count: 10;
-}
-img {
-	column-span:1;
+	column-fill: auto;
 }
 #images {
 	border:1px solid #000000;
