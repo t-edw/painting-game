@@ -4,6 +4,7 @@ body {
 .invisible {
 	width: 100px;
  	display:none;
+	margin:auto;
 }
 #images {
 	border:1px solid #000000;
