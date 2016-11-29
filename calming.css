@@ -2,7 +2,7 @@ body {
 	background-color: #e3e7f7/*#bcc6d6/*#47afb8*/;
 }
 .invisible {
-	width: 10px;
+	width: 100px;
  	display:none;
 }
 #images {
