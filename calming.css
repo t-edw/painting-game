@@ -6,6 +6,9 @@ body {
  	display:none;
 	margin:auto;
 }
+#invisi {
+	column-count: 10;
+}
 #images {
 	border:1px solid #000000;
 	width:500px;
