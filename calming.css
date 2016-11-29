@@ -6,6 +6,10 @@ body {
  	display:none;
 	margin-left:auto;
 	margin-right: auto;
+	column-count: 10;
+}
+img {
+	column-span:1;
 }
 #images {
 	border:1px solid #000000;
