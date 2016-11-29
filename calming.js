@@ -18,7 +18,7 @@ function press(){
     canvas.height = height;
 	rand = ""+rand+"";
 	var img = document.getElementById(rand);
-	img.style.display="block";
+	img.style.display="inline-block";
 	var pat = context.createPattern(img,"no-repeat");
     context.fillStyle = pat; 
     function draw(ev) {
