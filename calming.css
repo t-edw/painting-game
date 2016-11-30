@@ -10,6 +10,8 @@ body {
 }
 #invisi {
 	height: 30px;	
+	display: block;
+	margin: auto;
 }
 #images {
 	border:1px solid #000000;
