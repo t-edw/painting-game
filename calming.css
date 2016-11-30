@@ -10,9 +10,6 @@ body {
 	column-count: 10;
 	column-fill: auto;
 }
-#invisi {
-	height: 30px;
-}
 #images {
 	border:1px solid #000000;
 	width:500px;
