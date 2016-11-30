@@ -5,7 +5,7 @@ var context;
 var source;
 var size = 25;
 function press(){
-	var rand = Math.floor(Math.random()*10);
+	var rand = Math.floor(Math.random()*11);
 	pressed = true;
 	var sourceimage = document.querySelector('img');
     canvas = document.querySelector('canvas');
