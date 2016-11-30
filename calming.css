@@ -2,12 +2,14 @@ body {
 	background-color: #e3e7f7/*#bcc6d6/*#47afb8*/;
 }
 .invisible {
-	height: 2%;
  	display:none;
 	margin-left:auto;
 	margin-right: auto;
 	column-count: 10;
 	column-fill: auto;
+}
+#invisi {
+	height: 50px;	
 }
 #images {
 	border:1px solid #000000;
