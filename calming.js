@@ -3,7 +3,7 @@ var pressed = false;
 var canvas;
 var context;
 var source;
-var size = 25;
+var size = document.getElementById("range").value;
 function press(){
 	var rand = Math.floor(Math.random()*11);
 	pressed = true;
