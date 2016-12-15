@@ -106,7 +106,7 @@ function large(){
 	size=45;
 }
 function size(){
-	size=document.getElementById("range").value;
+	size=document.getElementById("range").value.parseInt();
 }
 // auto change image when compelte?
 // more precise instructions
