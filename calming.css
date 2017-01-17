@@ -40,12 +40,14 @@ nav {
 nav button, button:active{
     border: 1px solid #ffffff;
     padding: 5px;
+	margin: 1px;
     color: #ffffff;
 	background-color: transparent;
     text-decoration: none;
 	outline: none;
 	font-family: 'Libre Franklin', sans-serif;
 	transition: 0.75s;
+	height: 30px;
 }
 nav button:hover {
     cursor: default;
@@ -68,3 +70,7 @@ p {
 	margin-left:15%;
 	font-family: 'Raleway', sans-serif;
 }
+#rng {
+	height:5px;
+}
+

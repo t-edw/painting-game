@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="calming.css">
+	<script type="text/javascript" src="calming.js"></script>
+	<meta charset="UTF-8">
+	<title>painting game</title>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<audio id="backgroundMusic" loop>
+		<source id="source" type="audio/mpeg"></source>
+		Your browser does not suppose the audio element.
+	</audio>
+	<nav>
+		<button id="begin" onclick="press()">start</button>
+		<button id="rain" onclick="rain()">rain</button>
+		<button id="ocean" onclick="ocean()">ocean</button>
+		<button id="forest" onclick="forest()">forest</button>
+		<button id="classical" onclick="classical()">classical</button>
+		<button id="stop" onclick="stopMusic()">silence</button>
+		<button><form onmouseout="changeSize()">
+			<input id="rng" type="range" min="5" max="50" />
+		</form></button>
+	</nav>
+	<br><br><br>
+	<p>welcome to breathe, an interactive painting game designed to calm. to begin, press the start button above, then simply mouse over the square below to see the picture appear. to get another image and reset, you can press the start button again. there are also several sound options available. try them out by clicking the button with the sound you'd like to hear. if you would prefer not to hear anything at all, click silence and the sounds will stop.</p>
+	<canvas id="images" align="center">
+		Canvas is not supported
+	</canvas>
+	<h5 id="invisi">
+		<table>
+			<tr>
+				<td><img class="invisible" id="0" src="succulents.jpg"></td>
+				<td><img class="invisible" id="1" src="space.jpg"></td>
+				<td><img class="invisible" id="2" src="stars.jpg"></td>
+				<td><img class="invisible" id="3" src="pinterest.jpg"></td>
+				<td><img class="invisible" id="4" src="purple.jpg"></td>
+				<td><img class="invisible" id="5" src="puppies.jpg"></td>
+				<td><img class="invisible" id="6" src="puppies2.jpg"></td>
+				<td><img class="invisible" id="7" src="pastel.jpg"></td>
+				<td><img class="invisible" id="8" src="pink.jpg"></td>
+				<td><img class="invisible" id="9" src="beach.jpg"></td>
+				<td><img class="invisible" id="10" src="yolo.gif"></td>
+			</tr>
+		</table>
+	</h5>
+</body>
+</html>
