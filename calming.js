@@ -105,9 +105,11 @@ function medium(){
 function large(){
 	size=45;
 }
-function size(){
-	size=document.getElementById("range").value;
+function changeSize(){
+	size=document.getElementById("rng").valueAsNumber;
 }
+
+	
 // auto change image when compelte?
 // more precise instructions
 // making sure you can reach all edges
